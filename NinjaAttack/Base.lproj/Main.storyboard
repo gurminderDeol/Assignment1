@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G8q-vI-026">
+    <device id="retina4_7" orientation="landscape" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="p8M-z6-AOA">
+            <objects>
+                <viewController storyboardIdentifier="game" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e83-vN-vyi" customClass="GameViewController" customModule="NinjaAttack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pJV-r6-aut" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="lyj-Ez-tNy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KvG-gW-UP6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="-2"/>
+        </scene>
+        <!--Start View Controller-->
+        <scene sceneID="tWB-7o-weJ">
+            <objects>
+                <viewController storyboardIdentifier="start" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vgw-yF-3aK" customClass="StartViewController" customModule="NinjaAttack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nq7-7e-CpI">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyr-Re-WNs">
+                                <rect key="frame" x="235" y="55" width="196" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Start Game"/>
+                                <connections>
+                                    <action selector="StartButton:" destination="Vgw-yF-3aK" eventType="touchUpInside" id="4pX-sk-3xJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="aYl-al-PhE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4BU-gL-mtb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="arD-8H-xcS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="923.38830584707648" y="-1026.4000000000001"/>
+        </scene>
+        <!--Player View Controller-->
+        <scene sceneID="VeC-Am-EXL">
+            <objects>
+                <viewController storyboardIdentifier="player" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AGx-OQ-b3Q" customClass="playerViewController" customModule="NinjaAttack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7G2-bY-rw3">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWo-M0-l01">
+                                <rect key="frame" x="258" y="56" width="150" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Player 1"/>
+                                <connections>
+                                    <action selector="player1:" destination="AGx-OQ-b3Q" eventType="touchUpInside" id="wAU-cd-tDm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jis-jD-WcV">
+                                <rect key="frame" x="258" y="165" width="150" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="player2"/>
+                                <connections>
+                                    <action selector="player2:" destination="AGx-OQ-b3Q" eventType="touchUpInside" id="Umf-xs-9uw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="NHB-Ce-NZl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u1v-qt-kJ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1615.1424287856073" y="-1026.4000000000001"/>
+        </scene>
+        <!--Level View Controller-->
+        <scene sceneID="ob4-uU-bfk">
+            <objects>
+                <viewController storyboardIdentifier="level" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qA5-to-1qA" customClass="levelViewController" customModule="NinjaAttack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tx5-RX-n2T">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3e-h7-lGf">
+                                <rect key="frame" x="236" y="63" width="195" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Easy"/>
+                                <connections>
+                                    <action selector="Easy:" destination="qA5-to-1qA" eventType="touchUpInside" id="23W-EW-6Ax"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2a-vA-tOw">
+                                <rect key="frame" x="244" y="133" width="179" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hard"/>
+                                <connections>
+                                    <action selector="Hard:" destination="qA5-to-1qA" eventType="touchUpInside" id="usI-yg-Rhn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="BE0-lY-LRa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vt0-d5-3CP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2273.6131934032987" y="-1028"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7Q9-YF-RDu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G8q-vI-026" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cFA-BI-lFm">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Vgw-yF-3aK" kind="relationship" relationship="rootViewController" id="9tD-tN-QMR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x6F-6f-d80" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132.68365817091455" y="-1026.4000000000001"/>
+        </scene>
+    </scenes>
+</document>
